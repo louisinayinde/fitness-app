@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 
+import Loader from './Loader'
+
 const ExerciseVideos = ({ exerciseVideos, name}) => {
 
     if(!exerciseVideos.length) return  (
-        <Typography variant="h4" marginTop='83px'>
-            Loading...
-        </Typography>
+        <Loader />
     )
 
   return (
